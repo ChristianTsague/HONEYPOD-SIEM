@@ -1,0 +1,21 @@
+Avant de commancer partons sur le fait que vous ayez installer les machine virtuelle suivante le plan d'adressage
+etant le suivant nous allons juste configurer les pc une fois l'installation et installer notre SIEM
+la segmentation c'est faut en trois vmnet du 1 a 3 comme le montre la capture si joint 
+1. plan d'adressage
+	Pfsense
+		WAN (pour internet): DHCP (NAT)
+		LAN (valionne service): 192.168.220.253 (host only)
+		OPT1 (service encadreur): 192.168.43.253(host only)
+		0PT2 (DMZ): 192.168.200.253(host only)
+
+
+	LAN
+		ubuntu server (service encadreur) 192.168.220.5
+		windows server (service valione) 102.168.220.2
+
+
+	OPT 1
+		kali (service stagiere) 192.168.43.2
+	
+	OPT 2
+		ubuntu desktop (DMZ) 192.168.200.3
